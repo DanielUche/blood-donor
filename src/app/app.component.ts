@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import * as firebase from 'firebase';
 
+import { 
+  environment
+} from '../environments/environment';
+
 const { 
   FIREBASE_APIKEY, 
   FIREBASE_AUTH_DOMAIN, 
@@ -9,8 +13,7 @@ const {
   FIREBASE_STORAGE_BUCKET, 
   FIREBASE_MESAGING_SENDER_ID, 
   FIREBASE_APP_ID 
-} = process.env;
-
+} = environment;
 
 const config = {
   apiKey: FIREBASE_APIKEY,
